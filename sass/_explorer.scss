@@ -1,4 +1,5 @@
-@import "box-shadow";
+
+@use "box-shadow";
 
 .explorer {
 
@@ -24,7 +25,7 @@
     cursor: pointer;
     background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
     font-size: 1rem;
-    @include base-shadow;
+    @include box-shadow.base-shadow;
   }
   & button:hover {
     transform: scale(1.02);
