@@ -20,9 +20,21 @@ header {
   position: relative;
 }
 
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 0.5rem;
+}
+.city i {
+  font-size: 1.5rem;
+}
+
 .explorer {
   text-align: center;
-  margin: 2rem;
 }
 .explorer h2 {
   font-size: 1.5rem;
@@ -41,26 +53,34 @@ header {
   transition: transform 200ms;
   margin-top: 1rem;
   cursor: pointer;
-  box-shadow: 2px 1px 8px -3px #7e7e7e;
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   font-size: 1rem;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
 }
 .explorer button:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
 
-.city {
+.tuto ol {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  background-color: #f3f3f3;
-  text-align: center;
-  padding: 0.5rem;
+  gap: 2rem;
 }
-.city i {
-  font-size: 1.5rem;
+@media (max-width: 100px) {
+  .tuto ol {
+    flex-direction: column;
+  }
+}
+.tuto li {
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+}
+.tuto li:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */
