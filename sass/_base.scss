@@ -14,8 +14,9 @@ body {
 
 main {
   padding: 0 7rem;
+  background-color: white;
   @media (max-width: 1000px) {
-    padding: 0 1rem;
+    padding: 0;
   }
 }
 

@@ -5,8 +5,10 @@
 #homepage {
   .menus {
     background-color: #f6f6f6;
-    margin-bottom: 2rem;
-
+    padding: 2rem 1rem;
+    .titreresto {
+      margin-bottom: 1rem;
+    }
     .menus__cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -17,6 +19,7 @@
       .new {
         position: relative;
       }
+      
       .new::before {
         content: "Nouveau";
         position: absolute;
@@ -33,7 +36,7 @@
 
     .card {
       &__image {
-        height: 15rem;
+        height: 14rem;
         border-radius: 1rem 1rem 0 0;
         background-size: cover;
         background-position: center;
@@ -57,9 +60,16 @@
       
       &__description {
         @include mixins.heart-animated;
-        h3,
-        p {
-          padding: 0.3rem;
+        .titrecarte1 {
+          margin-top: 0;
+          margin-left: 1rem;
+          padding-top: 1rem;
+          margin-bottom: -1rem;
+        }
+        .titrecarte2 {
+          margin-left: 1rem;
+          padding-bottom: 1rem;
+          margin-top: 1.5rem;
         }
       }
     }

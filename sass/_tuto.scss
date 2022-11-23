@@ -4,12 +4,13 @@
 
 .tuto {
   counter-reset: steps;
-  margin-bottom: 2rem;
+  padding: 2rem 1rem;
   & ol {
     display: flex;
     gap: 2rem;
     @media (max-width: variables.$breakpoint) {
       flex-direction: column;
+      padding-left: 1rem;
     }
   }
   & li {
