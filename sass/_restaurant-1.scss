@@ -8,6 +8,7 @@ body {
 }
 
 #page-resto {
+  background-color: #f6f6f6;
   header {
     &:hover::before {
       @include mixins.transform-zoom($zoom-level: 1.2, $transformation: translateY(-50%));
@@ -38,12 +39,14 @@ body {
       padding: 2rem 1rem;
       @include mixins.heart-animated;
       border-radius: 2rem 2rem 0 0;
-      background-color: colors.$lightergrey;
+      background-color: #f6f6f6;
+     
     }
   }
 
   .resto-main {
     padding: 0 1rem;
+    background-color: #f6f6f6;
   }
   .menus {
     display: grid;
@@ -69,6 +72,7 @@ body {
     }
     .menus__category {
       overflow: hidden;
+      margin-bottom: .4rem;
 
       .menu-item {
         $numberOfItems: 3;
@@ -79,7 +83,9 @@ body {
         background-color: white;
         border-radius: 1rem;
         overflow: hidden;
-        margin: 0.5rem;
+        margin-bottom: 1rem;
+        margin-right: .2rem;
+        margin-left: 0.1rem;
         @include mixins.box-shadow;
         animation: appear 1s;
         animation-fill-mode: both;

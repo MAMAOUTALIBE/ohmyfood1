@@ -183,7 +183,7 @@ header {
 
 #homepage .menus {
   background-color: #f6f6f6;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem;
 }
 #homepage .menus .titreresto {
   margin-bottom: 1rem;
@@ -255,6 +255,7 @@ header {
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
+  margin-right: 1rem;
 }
 #homepage .menus .card__description::after {
   display: inline-block;
@@ -275,6 +276,7 @@ header {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
+  margin-right: 1rem;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 #homepage .menus .card__description:hover::after {
@@ -321,6 +323,9 @@ body {
   background-color: #f6f6f6;
 }
 
+#page-resto {
+  background-color: #f6f6f6;
+}
 #page-resto header:hover::before {
   transform: translateY(-50%) scale(1.2);
 }
@@ -378,6 +383,7 @@ body {
   -webkit-background-clip: text;
   opacity: 1;
   transition: all 200ms ease-in-out;
+  margin-right: 1rem;
 }
 #page-resto .resto__title h2::after {
   display: inline-block;
@@ -398,6 +404,7 @@ body {
   -webkit-background-clip: text;
   opacity: 0;
   transition: all 200ms ease-in-out;
+  margin-right: 1rem;
   background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
 }
 #page-resto .resto__title h2:hover::after {
@@ -406,6 +413,7 @@ body {
 }
 #page-resto .resto-main {
   padding: 0 1rem;
+  background-color: #f6f6f6;
 }
 #page-resto .menus {
   display: grid;
@@ -434,13 +442,16 @@ body {
 }
 #page-resto .menus .menus__category {
   overflow: hidden;
+  margin-bottom: 0.4rem;
 }
 #page-resto .menus .menus__category .menu-item {
   display: flex;
   background-color: white;
   border-radius: 1rem;
   overflow: hidden;
-  margin: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 0.2rem;
+  margin-left: 0.1rem;
   box-shadow: 2px 1px 8px -3px #7e7e7e;
   animation: appear 1s;
   animation-fill-mode: both;

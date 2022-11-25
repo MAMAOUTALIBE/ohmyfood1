@@ -37,6 +37,7 @@
   -webkit-background-clip: text;
   opacity: $opacity;
   transition: all 200ms ease-in-out;
+  margin-right: 1rem;
 }
 
 @mixin heart-animated {
