@@ -62,10 +62,11 @@ header {
   border: none;
   background: #eaeaea;
   font-size: 1rem;
-  padding: 20px 5px 20px 5px;
+  padding: 18px 5px 18px 5px;
   margin-top: 5px;
   text-align: center;
   width: 150px;
+  font-family: "Roboto", sans-serif;
 }
 
 .explorer {
@@ -81,6 +82,7 @@ header {
 }
 .explorer p {
   font-size: 1rem;
+  margin: 1rem;
 }
 .explorer button {
   color: white;
