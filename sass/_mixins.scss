@@ -74,3 +74,12 @@
     opacity: 0.9;
   }
 }
+@mixin maps {
+  border: none;
+  background: #eaeaea;
+  font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  width: 150px;
+}

@@ -10,10 +10,10 @@ body {
 #page-resto {
   background-color: #f6f6f6;
   header {
-    &:hover::before {
+    &:hover::before, i{
       @include mixins.transform-zoom($zoom-level: 1.2, $transformation: translateY(-50%));
     }
-    &::before {
+    &::before, i{
       @include mixins.font-awesome($font-weight: 900);
       content: "\f060";
       left: 1rem;
@@ -105,7 +105,7 @@ body {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            font-size: .8rem;
+            font-size: 64%;
           }
         }
         .menu-item__check {

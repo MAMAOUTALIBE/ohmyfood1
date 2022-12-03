@@ -12,7 +12,7 @@ body {
 }
 
 .img {
-  height: 35px;
+  height: 30px;
 }
 
 main {
@@ -50,20 +50,22 @@ header {
   position: relative;
 }
 
-.city {
+.maps {
+  background: #eaeaea;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  background-color: #f3f3f3;
-  text-align: center;
-  padding: 1.5rem;
+  align-items: center;
+  box-shadow: inset 0px 5px 5px 0px #dddddd;
 }
-.city i {
-  font-size: 1.5rem;
-}
-.city h2 {
+
+.maps__search input {
+  border: none;
+  background: #eaeaea;
   font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  width: 150px;
 }
 
 .explorer {
@@ -134,7 +136,7 @@ header {
 }
 .tuto {
   counter-reset: steps;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
 }
 .tuto ol {
   display: flex;
@@ -204,6 +206,8 @@ header {
 }
 #homepage .menus .menus__cards .new {
   position: relative;
+  box-shadow: 2px 1px 8px -3px #7e7e7e;
+  border-radius: 1rem;
 }
 #homepage .menus .menus__cards .new::before {
   content: "Nouveau";
@@ -306,11 +310,19 @@ footer {
 }
 footer h2 {
   font-family: "Shrikhand", "sans-serif";
-  font-weight: 500;
+  font-weight: 400;
   padding: 1rem 0;
 }
-footer p {
-  padding: 0.2rem;
+footer ol {
+  list-style: none;
+  margin-left: -2.5rem;
+  margin-top: 5px;
+}
+footer ol li {
+  margin-bottom: 10px;
+}
+footer ol li i {
+  margin-right: 8px;
 }
 
 @keyframes appear {
@@ -330,10 +342,10 @@ body {
 #page-resto {
   background-color: #f6f6f6;
 }
-#page-resto header:hover::before {
+#page-resto header:hover::before, #page-resto header i {
   transform: translateY(-50%) scale(1.2);
 }
-#page-resto header::before {
+#page-resto header::before, #page-resto header i {
   display: inline-block;
   position: absolute;
   font-style: normal;
@@ -479,7 +491,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 0.8rem;
+  font-size: 64%;
 }
 #page-resto .menus .menus__category .menu-item .menu-item__check {
   display: grid;

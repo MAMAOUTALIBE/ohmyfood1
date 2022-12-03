@@ -18,17 +18,18 @@
     </header>
 
     <main>
-      <form class="city">
-        <i class="fas fa-map-marker-alt"></i>
-        <h2>Paris, Belleville</h2>
-      </form>
+      <div class="maps">
+        <span>
+          <i class="fas fa-map-marker-alt"></i>
+        </span>
+        <span class="maps__search">
+          <input type="search" name="city" value="Paris,Belleville" placeholder="Votre ville">
+        </span>
+      </div>
       <section class="explorer">
         <h2>Réservez le menu qui <br>vous convient</h2>
         <p>Découvrez des restaurants d'exception, <br> séléctionnés par nos soins </p> 
         <button>Explorer nos restaurants</button>
-        <div class="gradient">
-
-        </div>
       </section>
 
       <section class="tuto">
@@ -57,14 +58,14 @@
               <p class="titrecarte2">Charonne</p>
             </div>
           </a>
-          <a href="./pages/restaurant-3.html" class="card">
+          <a href="./pages/restaurant-3.html" class="card new">
             <div class="card__image card__image-3"></div>
             <div class="card__description">
               <h3 class="titrecarte1">À la française</h3>
               <p class="titrecarte2">Cité Rouge</p>
             </div>
           </a>
-          <a href="./pages/restaurant-4.html" class="card">
+          <a href="./pages/restaurant-4.html" class="card new">
             <div class="card__image card__image-4"></div>
             <div class="card__description">
               <h3 class="titrecarte1">Le Délice des sens</h3>
@@ -77,20 +78,12 @@
 
     <footer>
       <h2>ohmyfood</h2>
-      <p>
-        <i class="fas fa-utensils"></i> 
-        <a href="#"> Proposer un restaurant </a>
-      </p>
-      <p>
-        <i class="fas fa-hands-helping"></i>
-        <a href="#">Devenir partenaire </a>
-      </p>
-      <p>
-        <a href="#"> Mentions légales </a>
-      </p>
-      <p>
-        <a href="mailto:bahm2062@gmail.com"> Contact </a>
-      </p>
+      <ol>
+        <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+        <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:bahm2062@gmail.com"></a></li>
+      </ol>
     </footer>
   </body>
 

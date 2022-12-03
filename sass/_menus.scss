@@ -18,6 +18,8 @@
       }
       .new {
         position: relative;
+        box-shadow: 2px 1px 8px -3px #7e7e7e;
+        border-radius: 1rem;
       }
       
       .new::before {

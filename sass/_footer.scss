@@ -6,10 +6,19 @@ footer {
   color: white;
   h2 {
     font-family: "Shrikhand", "sans-serif";
-    font-weight: 500;
+    font-weight: 400;
     padding: 1rem 0;
   }
-  p {
-    padding: 0.2rem;
+  ol {
+    list-style: none;
+    margin-left:-2.5rem;
+    margin-top: 5px;
+    li {
+      margin-bottom: 10px;
+      i {
+        margin-right: 8px;
+      }
+    }
   }
+
 }
