@@ -493,7 +493,13 @@ body {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  font-size: 64%;
+  font-size: 14.4px;
+}
+@media (max-width: 400px) {
+  #page-resto .menus .menus__category .menu-item .menu-item__description h4,
+  #page-resto .menus .menus__category .menu-item .menu-item__description p {
+    font-size: 10.1px;
+  }
 }
 #page-resto .menus .menus__category .menu-item .menu-item__check {
   display: grid;

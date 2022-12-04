@@ -105,7 +105,11 @@ body {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            font-size: 64%;
+            font-size: 14.4px;
+            @media (max-width: 400px) {
+              font-size: 10.1px;
+            }
+            
           }
         }
         .menu-item__check {
